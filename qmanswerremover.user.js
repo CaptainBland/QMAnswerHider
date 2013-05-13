@@ -33,8 +33,7 @@ function enableAnswers() {
 	var inputs = document.getElementsByTagName("input");
 	var feedback = document.getElementsByClassName("feedback");
 
-	for(i = 0; i<inputs.length; i++)
-	{
+	for(i = 0; i<inputs.length; i++) {
 		inputs[i].style.display="inline";
 	}
 	
@@ -70,8 +69,7 @@ function disableAnswers() {
 	var icon = byClassName("questioncorrectnessicon");
 	var inputs = document.getElementsByTagName("input");
 	var feedback = document.getElementsByClassName("feedback");
-	for(i = 0; i<inputs.length; i++)
-	{
+	for(i = 0; i<inputs.length; i++) {
 		inputs[i].style.display="none";
 	}
 	
@@ -93,8 +91,7 @@ function disableAnswers() {
 	
 }
 
-function injectScript(fstring)
-{
+function injectScript(fstring) {
 	var inject = document.createElement("script");
 	inject.setAttribute("type", "text/javascript");
 	inject.appendChild(document.createTextNode(fstring));
